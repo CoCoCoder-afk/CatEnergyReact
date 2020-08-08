@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1">
+  <title>cat-energy-catalog-desktop</title>
+  <link rel = "stylesheet" href = "CSS/styles.min.css">
+</head>
+<body>
+  <header class = "site-header container">
+    <nav class = "site-header__navigation navigation">
+      <div class = "navigation__link-wrapper">
+        <a href = "index.html" class = "navigation__link">
+          <svg class="img-logo-desktop navigation__logo">
+            <use xlink:href="img/sprite.svg#logo-desktop"></use>
+          </svg>
+          <svg class="img-logo-desktop navigation__logo">
+            <use xlink:href = "img/sprite.svg#logo-tablet"></use>
+          </svg>
+          <svg class = "img-logo-desktop navigation__logo">
+            <use xlink:href = "img/sprite.svg#logo-mobile"></use>
+          </svg>
+        </a>   
+      </div>
+      <ul id = "nav-menu" class = "navigation__menu nav-menu distance-between">
+      </ul>
+    </nav>
+  </header>
+  <main class = "site-main">
+    <section class = "site-main__catalog catalog container">
+      <h3 class = "catalog__heading">Каталог продукции</h3>
+      <ul id = "catalog__list" class = "catalog__list"></ul>
+    </section>
+    <section class = "site-main__additional additional container">
+      <h3 class = "additional__heading"> Дополнительные товары</h3>
+      <table class = "additional__table add-table">
+        <tr class="add-table__row_additional-text">
+          <td colspan = "4" class = "add-table__column_additional-text">
+            Сахарозаменитель
+          </td>
+        </tr>
+        <tr class="add-table__row">
+          <td class="add-table__column">Сахарозаменитель</td>
+          <td class="add-table__column">1 упакова (100 г)</td>
+          <td class="add-table__column">200 Р.</td>
+          <td class="add-table__column">
+            <form action = "link">
+              <button class = "product__button product__button_width_large product__button_main" name = "product__button">Заказать</button>
+            </form>
+          </td>
+        </tr>
+        <tr class = "add-table__row_additional">
+          <td colspan = "4">
+            <form action = "link">
+              <button class = "product__button product__button_width_large product__button_additional" name = "product__button">Заказать</button>
+            </form>
+          </td>
+        </tr>
+        <tr class="add-table__row_additional-text">
+            <td colspan = "4" class = "add-table__column_additional-text">
+              Питьевая вода
+            </td>
+          </tr>
+        <tr class="add-table__row">
+          <td class="add-table__column">Питьевая вода</td>
+          <td class="add-table__column">5 литров</td>
+          <td class="add-table__column">50 Р.</td>
+          <td class="add-table__column">
+            <form action = "link">
+            <button class = "product__button product__button_width_large" name = "product__button">Заказать</button>
+          </form>
+          </td>
+        </tr>
+        <tr class = "add-table__row_additional">
+          <td colspan = "4">
+            <form action = "link">
+              <button class = "product__button product__button_width_large product__button_additional" name = "product__button">Заказать</button>
+            </form>
+          </td>
+        </tr>
+        <tr class="add-table__row_additional-text">
+          <td colspan = "4" class = "add-table__column_additional-text">
+            Молоко
+          </td>
+        </tr>
+        <tr class="add-table__row">
+          <td class="add-table__column">Молоко</td>
+          <td class="add-table__column">1 литр</td>
+          <td class="add-table__column">100 Р.</td>
+          <td class="add-table__column">
+            <form action = "link">
+              <button class = "product__button product__button_width_large" name = "product__button">Заказать</button>
+            </form>
+          </td>
+        </tr>
+        <tr class = "add-table__row_additional">
+          <td colspan = "4">
+            <form action = "link">
+              <button class = "product__button product__button_width_large product__button_additional" name = "product__button">Заказать</button>
+            </form>
+          </td>
+        </tr>
+        <tr class="add-table__row_additional-text">
+         <td colspan = "4" class = "add-table__column_additional-text">
+           Витамины
+         </td>
+        </tr>
+        <tr class="add-table__row">
+          <td class="add-table__column">Витамины</td>
+          <td class="add-table__column">1 упаковка (30 г)</td>
+          <td class="add-table__column">300 Р.</td>
+          <td class="add-table__column">
+            <form action = "link">
+              <button class = "product__button product__button_width_large" name = "product__button">Заказать</button>
+            </form>
+          </td>
+        </tr>
+        <tr class = "add-table__row_additional">
+          <td colspan = "4">
+            <form action = "link">
+              <button class = "product__button product__button_width_large product__button_additional" name = "product__button">Заказать</button>
+            </form>
+          </td>
+        </tr>
+      </table>
+      <div class = "additional__info add-info">
+        <p class = "add-info__text">Закажите все <br>и получите чехол для <br> кота в подарок!</p>
+      </div>
+    </section>
+    <section id = "sectionLocation" class = "site-main__location location container location_margin-top "></section>
+  </main>
+  <footer id = "footerLocation"></footer>
+  <script src = "js/catalog.bundle.js"></script>
+  <script async src = "js/picturefill.min.js"></script>
+  <script>
+    document.createElement("picture");
+  </script>
+</body>
+</html>
